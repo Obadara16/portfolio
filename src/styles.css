@@ -100,7 +100,7 @@
 @media screen and (max-width: 600px) {
     .about__me {
         width: 65%;
-        margin: 0 auto 3rem;
+        margin: 2rem auto 3rem;
     }
 
     .about__cards {
@@ -340,9 +340,8 @@ header {
     padding-top: 7rem;
     overflow: hidden;
 }
-h5 {
-    font-size: 1.0em;
-}
+
+
 
 small {
     font-size: 1.2em;
@@ -354,9 +353,7 @@ small {
     align-items: center;
     justify-content: center;
 }
-i {
-    font-size: 1.4em;
-}
+
 .brand {
     background: transparent;
     position: absolute;
@@ -510,6 +507,10 @@ nav a.active {
 
 .portfolio__item h3 {
     margin: 1.2rem 0 1.2rem;
+    font-size: 1.2rem;
+}
+.portfolio__item h4 {
+    font-size: 1rem;
 }
 .portfolio__item-cta {
     display: flex;
@@ -586,7 +587,7 @@ nav a.active {
 }
 
 .service__list p {
-    font-size: 1.4rem;    
+    font-size: 1.2rem;    
 }
 
 /* ============== MEDIA QUERIES (MEDIUM DEVICES) ========== */
