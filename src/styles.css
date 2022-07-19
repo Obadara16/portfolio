@@ -363,9 +363,7 @@ small {
     color: var(--color-primary);
 }
 
-.brand__name {
-    position: fixed;
-}
+
 .header__container {
     text-align: center;
     height: 100%;
@@ -507,7 +505,7 @@ nav a.active {
 
 .portfolio__item h3 {
     margin: 1.2rem 0 1.2rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 .portfolio__item h4 {
     font-size: 1rem;
