@@ -1,0 +1,14 @@
+.button {
+    position: fixed; 
+   width: 120%;
+   left: 90%;
+   bottom: 6.9rem;
+   height: 20px;
+   font-size: 2.5rem;
+   z-index: 1;
+   cursor: pointer;
+   color: #fff;
+}
+.button:hover {
+    color: #4db5ff;
+}
