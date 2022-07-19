@@ -190,6 +190,7 @@ input, textarea {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
+    
 }
 
 .experience__container> div {
@@ -230,10 +231,11 @@ input, textarea {
 @media screen and (max-width: 1024px) {
     .experience__container {
         grid-template-columns: 1fr;
+        font-size: 0.8em;
     }
     .experience__container > div {
-        width: 80%;
-        padding: 2rem;
+        width: 60%;
+        padding: 1rem;
         margin: 0 auto;
     }
     .experience__content {
@@ -507,11 +509,12 @@ nav a.active {
 }
 
 .portfolio__item h3 {
-    margin: 1.2 0 2rem;
+    margin: 1.2rem 0 1.2rem;
 }
 .portfolio__item-cta {
     display: flex;
     gap: 1rem;
+    margin-top: 1rem;
     margin-bottom: 1rem;
 }
 

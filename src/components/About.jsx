@@ -5,7 +5,6 @@ import {FaAward} from 'react-icons/fa'
 import {FiUsers} from 'react-icons/fi'
 import {VscFolderLibrary} from 'react-icons/vsc'
 import HeaderSocials from './others/HeaderSocials'
-import {FaArrowCircleRight} from 'react-icons/fa';
 
 
 const About = () => {
@@ -45,11 +44,11 @@ const About = () => {
         </div>
         <div className="about__me">
           <div className="about__me-image">
-            <img src={ME} alt="About Image" />
+            <img src={ME} alt="About Me" />
           </div>
         </div>
       </div> 
-      <p className="scroll__down"><a href="mailto:obadararoqeeb@gmail.com" target="_blank">obadararoqeeb@gmail.com</a></p>
+      <p className="scroll__down"><a href="mailto:obadararoqeeb@gmail.com" target="_blank" rel='noopener noreferrer'>obadararoqeeb@gmail.com</a></p>
 
 
       

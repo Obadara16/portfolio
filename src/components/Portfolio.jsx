@@ -1,7 +1,6 @@
 import React from 'react'
 import '../styles.css'
 import { data } from '../data'
-import { getByTitle } from '@testing-library/react'
 
 const Portfolio = () => {
   return (
@@ -19,8 +18,8 @@ const Portfolio = () => {
           <h3 style={{color: "#fff"}}>{item.title}</h3>
           <h4><i>{item.description}</i></h4>
           <div className="portfolio__item-cta">
-            <a href={item.github} className="btn" target='_blank'>Github</a>
-            <a href={item.demo} className="btn btn-primary" target='_blank'>Live Demo</a>
+            <a href={item.github} className="btn" target='_blank' rel='noopener noreferrer'>Github</a>
+            <a href={item.demo} className="btn btn-primary" target='_blank' rel='noopener noreferrer'>Live Demo</a>
           </div>
         </article>
         )
