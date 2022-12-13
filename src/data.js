@@ -1,5 +1,5 @@
 import IMG1 from './assets/portfolio.png'
-import IMG2 from './assets/portfolio2.png'
+import IMG2 from './assets/bti.png'
 import IMG3 from './assets/portfolio3.png'
 
 export const data = [
@@ -22,10 +22,10 @@ export const data = [
     {
         id: 3,
         image: IMG2,
-        title: 'Estate Chain Awaiting Page',
-        description: 'Estate chain is a real estate platform that aims to change real estate in Africa by keeping track of properties, verifying them, and purchasing and selling them. All of this will be accomplished through the use of blockchain technology.',
-        github: 'https://github.com/Obadara16',
-        demo: 'Not Hosted Yet'
+        title: 'BlockchainLab Training Institute',
+        description: 'BlockchainLab Training Institute is a platform that links tech enthusiasts with sponsors and job offers.',
+        github: 'https://github.com/Obadara16/',
+        demo: 'https://blockchainlabacademy.com'
     }
     
 ]
