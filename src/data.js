@@ -9,7 +9,7 @@ export const data = [
         title: 'Brocon',
         description: 'An organization of undergraduate student consultants working to provide quality, pro-bono advisory services for our clients. We work with startup and growing companies from a variety of industries, ranging from technology to healthcare to fashion, providing innovative and effective solutions.',
         github: 'https://github.com/Obadara16/Brocon',
-        demo: 'https://roqbrocon.herokuapp.com'
+        demo: 'https://brocon.onrender.com'
     },
     {
         id: 2,
