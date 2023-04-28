@@ -6,6 +6,7 @@
   "author": "Obadara16 <obadararoqeeb@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "@sanity/client": "^5.4.2",
     "emailjs": "^4.0.1",
     "emailjs-com": "^3.2.0",
     "react": "^18.2.0",
