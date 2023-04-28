@@ -1,6 +1,6 @@
 import IMG1 from './assets/afriqhub.png'
 import IMG2 from './assets/afriqfabs.png'
-import IMG3 from './assets/portfolio3.png'
+import IMG3 from './assets/gainsborough.png'
 import IMG4 from './assets/portfolio.png'
 import IMG5 from './assets/portfolio3.png'
 import IMG6 from './assets/bti.png'
@@ -49,8 +49,8 @@ export const data = [
     {
         id: 6,
         image: IMG6,
-        title: 'BlockchainLab Training Institute',
-        description: 'BlockchainLab Training Institute is a platform that links tech enthusiasts with sponsors and job offers.',
+        title: 'BlockchainLab Academy',
+        description: 'Blockchain Lab Academy is an online learning platform that offers courses and training on blockchain technology. The platform provides comprehensive and up-to-date content on various blockchain topics, including blockchain basics, smart contracts, decentralized finance (DeFi), and more.',
         github: 'https://github.com/Obadara16/',
         demo: 'https://blockchainlabacademy.com'
     }
