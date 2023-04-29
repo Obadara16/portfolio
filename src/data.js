@@ -22,7 +22,7 @@ export const data = [
     description:
       "AfriqFabs is a family-owned business that provides high-quality, stylish, and practical fabrics at affordable prices. They offer a wide range of fabrics, including cotton, silk, polyester, rayon, linen, and wool, and are committed to sustainable and ethical sourcing practices.  ",
     github: "https://github.com/Obadara16/afriqfabs",
-    demo: "https://afriqfabs.onrender.com",
+    demo: "https://afrimart.onrender.com",
   },
   {
     id: 3,
