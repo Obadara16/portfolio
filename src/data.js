@@ -4,10 +4,21 @@ import IMG3 from "./assets/gainsborough.png";
 import IMG4 from "./assets/portfolio.png";
 import IMG5 from "./assets/portfolio3.png";
 import IMG6 from "./assets/bti.png";
+import IMG7 from "./assets/fundtrack.png";
+
 
 export const data = [
   {
     id: 1,
+    image: IMG7,
+    title: "FundTrack",
+    description:
+      "FundTrack is a digital wallet app to easily manage your funds and make transactions with ease. Our advanced algorithm analyzes your transactions and predicts your spending habits, allowing you to plan and budget better.",
+    github: "https://github.com/Obadara16/fundtrack",
+    demo: "https://fundtrack-i4kx.onrender.com",
+  },
+  {
+    id: 2,
     image: IMG1,
     title: "AfriqHub",
     description:
@@ -16,7 +27,7 @@ export const data = [
     demo: "https://afriqhub.com",
   },
   {
-    id: 2,
+    id: 3,
     image: IMG2,
     title: "AfriqFabs",
     description:
@@ -25,7 +36,7 @@ export const data = [
     demo: "https://afrimart.onrender.com",
   },
   {
-    id: 3,
+    id: 4,
     image: IMG3,
     title: "GainsBorough",
     description:
@@ -34,7 +45,7 @@ export const data = [
     demo: "https://roqportfolio.onrender.com",
   },
   {
-    id: 4,
+    id: 5,
     image: IMG4,
     title: "Brocon",
     description:
@@ -43,7 +54,7 @@ export const data = [
     demo: "https://brocon.onrender.com",
   },
   {
-    id: 5,
+    id: 6,
     image: IMG5,
     title: "Estate Chain",
     description:
@@ -52,7 +63,7 @@ export const data = [
     demo: "https://roqportfolio.onrender.com",
   },
   {
-    id: 6,
+    id: 7,
     image: IMG6,
     title: "BlockchainLab Academy",
     description:
