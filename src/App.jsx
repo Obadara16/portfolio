@@ -3,12 +3,11 @@ import Header from './components/Header'
 import Nav from './components/Nav'
 import About from './components/About'
 import Experience from './components/Experience'
-import Services from './components/Services'
 import Portfolio from './components/Portfolio'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import ScrollToTop from './components/ScrollToTop'
-import sanityClient from '@sanity/client'
+import { experiences } from './data'
 
 // const client = sanityClient({
 //   projectId: 'your_project_id_here',
@@ -17,19 +16,19 @@ import sanityClient from '@sanity/client'
 // })
 
 
+
+
 const App = () => {
   return (
-    <>
+    <div className='w-full'>
       <Header/>
       <Nav/>
       <About/>
-      <Experience/>
-      <Services/>
+      <Experience experienceData={experiences} />
       <Portfolio/>
       <Contact/>
-      <ScrollToTop/>
       <Footer/>
-    </>
+    </div>
   )
 }
 

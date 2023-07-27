@@ -1,46 +1,41 @@
-import React from 'react'
-import '../styles.css'
-import {MdOutlineEmail} from 'react-icons/md'
-import {BsWhatsapp} from 'react-icons/bs'
-import {RiMessengerLine} from 'react-icons/ri'
+import React, { useEffect, useRef } from 'react';
+import sr from '../utils/sr';
+import { email, srConfig } from '../data';
+import usePrefersReducedMotion from '../hooks/usePrefersReducedMotion';
 
 const Contact = () => {
-  return (
-    <section id='contact'>
-      <h5>Get In Touch</h5>
-      <h2>Contact Me</h2>
+  const revealContainer = useRef(null);
+  const prefersReducedMotion = usePrefersReducedMotion();
 
-      <div className="container contact__container">
-        <div className="contact__options">
-          <article className="contact__option">
-            <MdOutlineEmail className='contact__option-icon'/>
-            <h4>Email</h4>
-            <h6>obadararoqeeb@gmail.com</h6>
-            <a href="mailto:obadararoqeeb@gmail.com" target="_blank" rel='noopener noreferrer'>Send a messsage</a>
-          </article>
-          <article className="contact__option">
-            <RiMessengerLine className='contact__option-icon'/>
-            <h4>Messenger</h4>
-            <h6>ROCKin</h6>
-            <a href="m.me/profile-name" target="_blank" rel='noopener noreferrer'>Send a messsage</a>
-          </article>
-          <article className="contact__option">
-            <BsWhatsapp className='contact__option-icon'/>
-            <h4>WhatsApp</h4>
-            <h6>+2348141234141</h6>
-            <a href="https://api.whatsapp.com/send?phone+2348141234141" target="_blank" rel='noopener noreferrer'>Send a messsage</a>
-          </article>
-        </div>
-        {/* END OF CONTACT OPTIONS */}
-        <form>
-          <input type="text" name='name' placeholder='Your Full Name' required />
-          <input type="email" name='email' placeholder='Your Email' required />
-          <textarea name="message" id="" cols="30" rows="7" placeholder='Your Message' required></textarea>
-          <button type='submit' className='btn btn-primary'>Send A Message</button>
-        </form>
+  useEffect(() => {
+    if (prefersReducedMotion) {
+      return;
+    }
+
+    sr.reveal(revealContainer.current, srConfig());
+  }, []);
+
+  return (
+    <section
+      id="contact"
+      className="w-[80%] mx-auto mb-100px text-center"
+      ref={revealContainer}
+    >
+      <div className='w-full md:w-[50%] mx-auto'>
+        <h2 className="overline text-2xl">What’s Next?</h2>
+
+        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold">Get In Touch</h2>
+        <p className="mt-4">
+          Although I’m not currently looking for any new opportunities, my inbox is always open.
+          Whether you have a question or just want to say hi, I’ll try my best to get back to you!
+        </p>
+
+        <a href={`mailto:${email}`} className="inline-block mt-8 px-8 py-2.5 color-mix text-white rounded-lg">
+          Say Hello
+        </a>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;
