@@ -67,7 +67,7 @@ const Experience = ({ experienceData }) => {
             style={{ transform: `translateY(calc(${activeTabId} * var(--tab-height)))` }}
           />
         </div>
-
+        <hr className=' text-white w-full bg-white'/>
         <div className="relative ml-4" aos-init aos-animate data-aos="fade-up" data-aos-duration="1200" data-aos-delay="1800">
           {experienceData &&
             experienceData.map((experience, i) => {

@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import sr from '../utils/sr';
 import { email, srConfig } from '../data';
 import usePrefersReducedMotion from '../hooks/usePrefersReducedMotion';
+import Aos from 'aos';
 
 const Contact = () => {
   const revealContainer = useRef(null);
@@ -15,14 +16,20 @@ const Contact = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
+  useEffect(() => {
+    Aos.init({
+      delay: 200, // Set delay of 200ms for content div animation
+    });
+  }, []);
+
   return (
     <section
       id="contact"
       className="w-[80%] mx-auto mb-100px text-center"
       ref={revealContainer}
     >
-      <div className='w-full md:w-[50%] mx-auto'>
-        <h2 className="overline text-2xl">What’s Next?</h2>
+      <div className='w-full md:w-[50%] mx-auto' aos-init aos-animate data-aos="fade-up" data-aos-duration="1200" data-aos-delay="1200">
+        <h2 className="text-2xl">What’s Next?</h2>
 
         <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold">Get In Touch</h2>
         <p className="mt-4">

@@ -24,11 +24,11 @@ const Portfolio = () => {
   }, [expandedItems]);
 
   return (
-    <section id="portfolio" className="py-16 w-[80%] mx-auto">
+    <section id="portfolio" className="w-[80%] mx-auto">
       <h5 className="text-gray-400">My Recent Projects</h5>
       <h2 className="text-3xl font-bold mb-8">Portfolio</h2>
 
-      <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {data.map((item, index) => (
           <article
             key={item.id}

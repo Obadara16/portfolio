@@ -36,7 +36,7 @@ const Header = () => {
         <div className="w-[80%] mt-6">
           <i className="font-semibold font-poppins">ROCKin</i>
         </div>
-        <div className=" mx-auto w-full md:w-1/2 h-full flex flex-col">
+        <div className=" mx-auto w-full md:w-1/2 h-full flex flex-col -mt-12">
           <div className="flex flex-col gap-6 justify-center h-full whitespace-nowrap text-center">
             <TypewriterAnimation text="Hello I'm" speed={100} onComplete={handleHelloComplete} styles="text-md"/>
             {isHelloComplete && <TypewriterAnimation text="Roqeeb Obadara" speed={100} onComplete={handleRoqeebComplete} styles="text-6xl text-mix" />}
