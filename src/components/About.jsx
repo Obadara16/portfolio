@@ -28,28 +28,17 @@ const About = () => {
         <div className="w-full flex flex-col justify-center items-center" aos-init aos-animate data-aos="fade-up" data-aos-duration="1200" data-aos-delay="1200">
           <div className='w-full mx-auto'>
             <h2 className="text-3xl font-bold">About Me</h2>
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-white mx-auto">
-              <article className="color-mix border-transparent rounded-lg px-4 md:px-8 py-2 text-center transition">
-                <FaAward className="text-white text-2xl md:mb-4" />
-                <h5 className="text-sm font-medium">Experience</h5>
-                <small className="text-xs">3+ Years Working</small>
-              </article>
-              <article className="color-mix border-transparent rounded-lg px-4 md:px-8 py-2 text-center transition">
-                <FiUsers className=" text-white text-2xl md:mb-4" />
-                <h5 className="text-sm font-medium">Client</h5>
-                <small className="text-xs">5+ Nationwide</small>
-              </article>
-              <article className="color-mix border-transparent rounded-lg px-4 md:px-8 py-2 text-center transition">
-                <VscFolderLibrary className="about__icon text-white text-2xl md:mb-4" />
-                <h5 className="text-sm font-medium">Projects</h5>
-                <small className="text-xs">10+ Completed</small>
-              </article>
-            </div>
+            
             <p className="mt-8 text-white">
-              An expert web developer specializing in front end development, ambitious and self-motivated with a strong
-              technical background that possesses self-discipline and the ability to work with the minimum of supervision,
-              a good team player, who thrives on creating engaging creative solutions, deadline orientated and has the
-              ability to produce detailed technical specifications from client requirements.
+            A passionate frontend developer focused on creating user-friendly web experiences. With a love for coding and an eye for design, 
+            I deliver modern solutions, collaborating seamlessly with designers and backend developers to optimize performance and maintain
+             a user-centric approach.
+            </p>
+
+            <p className='mt-8 text-white'>
+            Beyond technical expertise, I engage with the developer community and value user feedback. 
+            Committed to excellence, I look forward to contributing my skills to impactful projects, shaping a better digital world with exciting possibilities.
+
             </p>
 
             <a href="#contact" className="btn color-mix mt-8">
