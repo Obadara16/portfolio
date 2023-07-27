@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import '../styles.css';
+import '../../styles.css';
 
 const TypewriterAnimation = ({ text, speed, onComplete, styles }) => {
   const [displayText, setDisplayText] = useState('');
