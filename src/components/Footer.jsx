@@ -22,9 +22,12 @@ const Footer = () => {
         </a>
       </div>
         <div className='flex flex-col w-full text-center md:text-end'>
-          <p>Designed and coded in <span className='text-[#E66EBB]'>Visual Studio Code</span> by yours truly. </p>
-          <p>Built with <span className='text-[#E66EBB]'>React</span> and <span className='text-[#E66EBB]'>Tailwind CSS,</span> deployed with <span className='text-[#E66EBB]'>Render.</span> </p>
-           <p> All text is set in the Inter typeface.</p>
+        <div className='flex-col w-full text-start md:text-start'>
+        <p>Designed and crafted and crafted with passion by <span className='text-[#E66EBB]'>Roqeeb Obadaa</span> </p>
+          <p>Powered by <span className='text-[#E66EBB]'>React</span> and styled with love using <span className='text-[#E66EBB]'>Tailwind CSS,</span> </p>
+          <p>Deployed flawlessly with <span className='text-[#E66EBB]'>Render's</span> cutting edge technology. </p>
+           <p> Typography perfection achieved with the elegant <span className='text-[#E66EBB]'>Poppins</span> typeface.</p>
+        </div>
         </div>
       </div>
     </footer>
