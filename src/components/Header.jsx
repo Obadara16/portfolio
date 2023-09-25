@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import '../styles.css';
 import CTA from './others/CTA';
-import homeBanner from '../assets/banner.png';
 import TypewriterAnimation from './others/TypeWriterAnimation';
 
 const Header = () => {
-  const [shouldShowBackgroundImage, setShouldShowBackgroundImage] = useState(window.innerWidth < 768);
+  const [setShouldShowBackgroundImage] = useState(window.innerWidth < 768);
   const [isHelloComplete, setIsHelloComplete] = useState(false);
   const [isRoqeebComplete, setIsRoqeebComplete] = useState(false);
 

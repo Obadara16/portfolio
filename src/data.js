@@ -37,12 +37,12 @@ export const data = [
   },
   {
     id: 4,
-    image: IMG3,
-    title: "GainsBorough",
+    image: IMG6,
+    title: "BlockchainLab Academy",
     description:
-      "Gainsborough is a real estate platform that provides users with the ability to buy, rent, and lease properties. The platform also allows real estate agents to upload and sell properties to potential buyers and renters.",
+      "Blockchain Lab Academy is an online learning platform that offers courses and training on blockchain technology. The platform provides comprehensive and up-to-date content on various blockchain topics, including blockchain basics, smart contracts, decentralized finance (DeFi), and more.",
     github: "https://github.com/Obadara16/",
-    demo: "https://roqportfolio.onrender.com",
+    demo: "https://blockchainlabacademy.com",
   },
   {
     id: 5,
@@ -64,13 +64,14 @@ export const data = [
   },
   {
     id: 7,
-    image: IMG6,
-    title: "BlockchainLab Academy",
+    image: IMG3,
+    title: "GainsBorough",
     description:
-      "Blockchain Lab Academy is an online learning platform that offers courses and training on blockchain technology. The platform provides comprehensive and up-to-date content on various blockchain topics, including blockchain basics, smart contracts, decentralized finance (DeFi), and more.",
+      "Gainsborough is a real estate platform that provides users with the ability to buy, rent, and lease properties. The platform also allows real estate agents to upload and sell properties to potential buyers and renters.",
     github: "https://github.com/Obadara16/",
-    demo: "https://blockchainlabacademy.com",
+    demo: "https://roqportfolio.onrender.com",
   },
+  
 ];
 
 export const experiences = [
