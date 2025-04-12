@@ -2,14 +2,44 @@ import IMG1 from "./assets/afriqhub.png";
 import IMG2 from "./assets/afriqfabs.png";
 import IMG3 from "./assets/gainsborough.png";
 import IMG4 from "./assets/portfolio.png";
-import IMG5 from "./assets/portfolio3.png";
+import IMG5 from "./assets/gti.png";
 import IMG6 from "./assets/bti.png";
 import IMG7 from "./assets/fundtrack.png";
+import IMG8 from "./assets/confris.png";
+import IMG9 from "./assets/otwise.png";
+
 
 
 export const data = [
   {
     id: 1,
+    image: IMG5,
+    title: "Gti Rides",
+    description:
+      "GTI Rides is a user-friendly car rental platform that simplifies booking and fleet management. It offers seamless vehicle reservations and real-time tracking, making it easier for both users and businesses to manage rentals efficiently.",
+    github: "https://gtirides.com",
+    demo: "https://gtirides.com",
+  },
+  {
+    id: 2,
+    image: IMG8,
+    title: "Confris",
+    description:
+      "Confris is a Conference-as-a-Service platform designed to streamline event management. It simplifies abstract submission, peer reviews, and DOI integration, making it easier for organizers and participants to engage throughout the event lifecycle.<br /> <br /><b>(In Development) </b>",
+    github: "https://roqportfolio.onrender.com",
+    demo: "https://roqportfolio.onrender.com",  
+  },
+  {
+    id: 3,
+    image: IMG9,
+    title: "Otwise",
+    description:
+      "Otwise is a home adaptation grant platform designed to assist individuals with disabilities. It simplifies the application and assessment process, providing tailored solutions to improve accessibility and enhance quality of life for users.<br /> <br /><b>(In Development) </b>",
+    github: "https://roqportfolio.onrender.com",
+    demo: "https://roqportfolio.onrender.com",  
+  },  
+  {
+    id: 4,
     image: IMG7,
     title: "FundTrack",
     description:
@@ -18,7 +48,7 @@ export const data = [
     demo: "https://fundtrack-i4kx.onrender.com",
   },
   {
-    id: 2,
+    id: 5,
     image: IMG1,
     title: "AfriqHub",
     description:
@@ -27,7 +57,7 @@ export const data = [
     demo: "https://afriqhub.com",
   },
   {
-    id: 3,
+    id: 6,
     image: IMG2,
     title: "AfriqFabs",
     description:
@@ -36,7 +66,7 @@ export const data = [
     demo: "https://afriqfabs.onrender.com",
   },
   {
-    id: 4,
+    id: 7,
     image: IMG6,
     title: "BlockchainLab Academy",
     description:
@@ -45,16 +75,7 @@ export const data = [
     demo: "https://blockchainlabacademy.com",
   },
   {
-    id: 5,
-    image: IMG5,
-    title: "Brocon",
-    description:
-      "An organization of undergraduate student consultants working to provide quality, pro-bono advisory services for our clients. We work with startup and growing companies from a variety of industries, ranging from technology to healthcare to fashion, providing innovative and effective solutions.",
-    github: "https://github.com/Obadara16/Brocon",
-    demo: "https://brocon.onrender.com",
-  },
-  {
-    id: 6,
+    id: 8,
     image: IMG4,
     title: "Estate Chain",
     description:
@@ -63,7 +84,7 @@ export const data = [
     demo: "https://roqportfolio.onrender.com",
   },
   {
-    id: 7,
+    id: 9,
     image: IMG3,
     title: "GainsBorough",
     description:
@@ -76,70 +97,59 @@ export const data = [
 
 export const experiences = [
   {
-    position: 'Frontend Engineer (React/Javascript)',
-    company: 'Stevic Payment (Remote/Contract)',
-    date: 'August 2022 - Present',
+    position: 'Fullstack Engineer',
+    company: 'IntentTech (Remote)',
+    date: 'July 2024 - Present',
     description: [
-      'Worked with the development team to build a monitoring interface for a financial application that runs on the TIANYU P30 Android POS device.',
-      'Collaborated with the backend team to integrate APIs and ensure seamless functionality.',
-      'Translated UI/UX designs into responsive and interactive web interfaces.',
-      'Implemented best practices in frontend development, including clean code and performance optimization.',
+      'Led frontend and backend development for a Conference-as-a-Service platform with features like abstract submission, peer reviews, and DOI integration.',
+      'Built a Grant Management Platform from scratch, supporting client onboarding, triage, and in-depth assessment workflows.',
+      'Implemented dynamic UI components and complex form handling for both platforms.',
+      'Worked closely with designers for pixel-perfect UI and collaborated with stakeholders to refine features.',
+      'Managed database modeling and optimized queries for performance using Prisma and PostgreSQL.',
+      'Integrated CI/CD pipelines using Azure Pipelines and containerized services with Docker.',
+      'Wrote automated tests using Cypress to ensure feature reliability and reduce regressions.',
+      'Mentored interns, offering code reviews and guidance on task execution and best practices.',
     ],
-    skills: ['Javascript', 'Python', 'PHP'],
+    skills: ['React', 'NestJS', 'PostgreSQL', 'Docker', 'Azure Pipelines', 'Cypress'],
   },
   {
-    position: 'Frontend Engineer (React/Javascript)',
+    position: 'Frontend Engineer (React/JavaScript)',
+    company: 'GTI Rides (Remote/Contract)',
+    date: 'Nov 2023 - August 2024',
+    description: [
+      'Built responsive interfaces for a car rental management platform using React.',
+      'Collaborated with clients to gather requirements and deliver custom frontend solutions.',
+      'Wrote clean, maintainable code while following best practices in version control and documentation.',
+      'Ensured timely delivery of milestones and communicated progress with stakeholders.',
+    ],
+    skills: ['React', 'HTML', 'CSS', 'JavaScript'],
+  },
+  {
+    position: 'Fullstack Engineer',
+    company: 'Stevic Payment (Remote)',
+    date: 'August 2022 - July 2024',
+    description: [
+      'Developed a financial monitoring interface for Android POS devices (TIANYU P30).',
+      'Integrated backend APIs and ensured consistent functionality across application modules.',
+      'Converted UI/UX designs into interactive, scalable web interfaces.',
+      'Optimized performance and ensured maintainable code throughout the frontend and backend.',
+    ],
+    skills: ['JavaScript', 'React', 'Node.js', 'HTML', 'CSS'],
+  },
+  {
+    position: 'Frontend Engineer',
     company: 'Blockchain Lab (Lagos, Nigeria)',
     date: 'April 2022 - May 2023',
     description: [
-      'Designed and implemented a resilient business application that empowers property owners and prospective buyers to authenticate and validate properties effectively.',
-      'Performed consistent improvement of user experience and responded to customers\' issues.',
-      'Collaborated with cross-functional teams to develop and deliver innovative full stack software solutions.',
-      'Architect and develop scalable and high-performance web applications.',
-      'Utilize best practices and software principles to write clean, maintainable code.',
-      'Manage and lead distributed teams to ensure successful project execution.',
+      'Designed and implemented a property authentication platform for validating land and property ownership.',
+      'Improved user experience through iterative design updates and direct user feedback.',
+      'Worked closely with backend teams to deliver cohesive, full stack features.',
+      'Applied software design principles to develop scalable, high-performance web applications.',
     ],
-    skills: [
-      'HTML',
-      'CSS',
-      'JavaScript',
-      'React',
-      'Node.js',
-      'Python',
-      'Express.js',
-      'Django',
-      'RESTful API development and integration',
-      'Git and version control',
-    ],
-  },
-  {
-    position: 'Frontend Engineer (Bootstrap/React)',
-    company: 'Newmeq Digital Concept (Ibadan, Nigeria)',
-    date: 'August 2019 - Mar 2022',
-    description: [
-      'Developed frontend systems for various web applications, focusing on creating exceptional user experiences.',
-      'Collaborated with designers and backend developers to implement responsive and intuitive interfaces.',
-      'Leveraged modern web technologies and frameworks to deliver high-quality frontend solutions.',
-    ],
-    skills: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'React'],
-  },
-  {
-    position: 'Frontend Developer (Javascript/Bootstrap)',
-    company: 'Creative Minds (Part-Time/Volunteer)',
-    date: 'Sept. 2018 - December 2021',
-    description: [
-      'Collaborated with a team of developers to maintain and enhance the department\'s website.',
-      'Implemented new features and improvements based on user feedback and requirements.',
-      'Ensured a stable and smooth user experience by optimizing website performance and addressing any issues or bugs.',
-      'Utilized modern frontend technologies such as HTML, CSS, and JavaScript to build responsive and interactive web interfaces.',
-      'Employed popular frontend frameworks and libraries (e.g., React, Angular, Vue.js) to develop modular and maintainable code.',
-      'Taught and mentored students in frontend development, providing guidance and support in their learning journey.',
-      'Managed and updated the department\'s website content, ensuring it remains up-to-date and relevant.',
-      'Followed best practices in frontend development, including code documentation, version control, and testing.',
-    ],
-    skills: ['Javascript', 'Bootstrap', 'HTML', 'CSS', 'React', 'Angular', 'Vue.js'],
+    skills: ['JavaScript', 'React', 'HTML', 'CSS', 'Node.js'],
   },
 ];
+
 
 export const srConfig = (delay = 200, viewFactor = 0.25) => ({
   origin: 'bottom',

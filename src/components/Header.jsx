@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import '../styles.css';
 import CTA from './others/CTA';
 import TypewriterAnimation from './others/TypeWriterAnimation';
@@ -20,17 +20,17 @@ const Header = () => {
     };
   }, []);
 
-  const handleHelloComplete = () => {
+  // Use useCallback to prevent the functions from being recreated on each render
+  const handleHelloComplete = useCallback(() => {
     setIsHelloComplete(true);
-  };
+  }, []);
 
-  const handleRoqeebComplete = () => {
+  const handleRoqeebComplete = useCallback(() => {
     setIsRoqeebComplete(true);
-  };
+  }, []);
 
   return (
     <div id="home" className="w-full h-screen font-poppins mx-auto">
-      {/* style={shouldShowBackgroundImage ? { backgroundImage: `url(${homeBanner})`, backgroundSize: 'cover' } : {}} */}
       <div className="w-10/12 mx-auto h-full">
         <div className="w-[80%] mt-6">
           <i className="font-semibold font-poppins">ROCKin</i>
@@ -39,22 +39,10 @@ const Header = () => {
           <div className="flex flex-col gap-6 justify-center h-full whitespace-nowrap text-center">
             <TypewriterAnimation text="Hello I'm" speed={100} onComplete={handleHelloComplete} styles="text-md"/>
             {isHelloComplete && <TypewriterAnimation text="Roqeeb Obadara" speed={100} onComplete={handleRoqeebComplete} styles="text-6xl text-mix" />}
-            {isRoqeebComplete && <TypewriterAnimation text="Front-End Developer" speed={100} styles="text-md"/>}
+            {isRoqeebComplete && <TypewriterAnimation text="Full Stack Software Developer" speed={100} styles="text-md"/>}
             <CTA />
           </div>
         </div>
-
-        {/* {!shouldShowBackgroundImage && (
-          <div
-            className="md:w-3/5 min-h-[720px]"
-            style={{
-              backgroundImage: `url(${homeBanner})`,
-              backgroundRepeat: 'no-repeat',
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-            }}
-          ></div>
-        )} */}
       </div>
     </div>
   );

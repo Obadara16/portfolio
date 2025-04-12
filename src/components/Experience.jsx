@@ -15,7 +15,7 @@ const Experience = ({ experienceData }) => {
 
   useEffect(() => {
     Aos.init({
-      delay: 200, // Set delay of 200ms for content div animation
+      delay: 50, // Set delay of 200ms for content div animation
     });
   }, []);
 
@@ -38,7 +38,7 @@ const Experience = ({ experienceData }) => {
           role="tablist"
           aria-label="Experience tabs"
           onKeyDown={(e) => onKeyDown(e)}
-          aos-init aos-animate data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600"
+          aos-init="true" aos-animate="true"  data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600"
         >
       <h2 className="numbered-heading ml-4">Where I've Worked</h2>
           {experienceData &&
@@ -67,7 +67,7 @@ const Experience = ({ experienceData }) => {
             style={{ transform: `translateY(calc(${activeTabId} * var(--tab-height)))` }}
           />
         </div>
-        <div className="relative ml-4" aos-init aos-animate data-aos="fade-up" data-aos-duration="1200" data-aos-delay="1800">
+        <div className="relative ml-4" aos-init="true" aos-animate="true"  data-aos="fade-up" data-aos-duration="1200" data-aos-delay="1800">
           {experienceData &&
             experienceData.map((experience, i) => {
               const { position, company, date, description, skills } = experience;

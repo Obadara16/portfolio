@@ -8,26 +8,18 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 import ScrollToTop from './components/ScrollToTop'
 import { experiences } from './data'
-
-// const client = sanityClient({
-//   projectId: 'your_project_id_here',
-//   dataset: 'your_dataset_name_here',
-//   useCdn: true // Enable caching
-// })
-
-
-
+import SectionWrapper from './components/SectionWrapper'
 
 const App = () => {
   return (
     <div className='w-full'>
-      <Header/>
-      <Nav/>
-      <About/>
-      <Experience experienceData={experiences} />
-      <Portfolio/>
-      <Contact/>
-      <Footer/>
+      <Header />
+      <Nav />
+      <SectionWrapper><About /></SectionWrapper>
+      <SectionWrapper><Experience experienceData={experiences} /></SectionWrapper>
+      <SectionWrapper><Portfolio /></SectionWrapper>
+      <SectionWrapper><Contact /></SectionWrapper>
+      <Footer />
     </div>
   )
 }
