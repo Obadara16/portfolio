@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import '../../styles.css';
 
-const TypewriterAnimation = ({ text, speed, onComplete, styles }) => {
+const TypewriterAnimation = ({ text, speed, onComplete = () => {}, styles }) => {
   const [displayText, setDisplayText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isTypingComplete, setIsTypingComplete] = useState(false);
@@ -14,7 +14,7 @@ const TypewriterAnimation = ({ text, speed, onComplete, styles }) => {
       } else {
         clearInterval(interval);
         setIsTypingComplete(true);
-        onComplete();
+        onComplete(); // Now, it will never throw an error.
       }
     }, speed);
 
@@ -30,5 +30,6 @@ const TypewriterAnimation = ({ text, speed, onComplete, styles }) => {
     </div>
   );
 };
+
 
 export default TypewriterAnimation;

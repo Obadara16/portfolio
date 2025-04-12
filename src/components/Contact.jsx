@@ -18,7 +18,7 @@ const Contact = () => {
 
   useEffect(() => {
     Aos.init({
-      delay: 200, // Set delay of 200ms for content div animation
+      delay: 10, // Set delay of 200ms for content div animation
     });
   }, []);
 
@@ -28,7 +28,7 @@ const Contact = () => {
       className="w-[80%] mx-auto mb-100px text-center"
       ref={revealContainer}
     >
-      <div className='w-full md:w-[50%] mx-auto' aos-init aos-animate data-aos="fade-up" data-aos-duration="1200" data-aos-delay="1200">
+      <div className='w-full md:w-[50%] mx-auto' aos-init="true" aos-animate="true"  data-aos="fade-up" data-aos-duration="400" data-aos-delay="400">
         <h2 className="text-2xl">What’s Next?</h2>
 
         <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold">Get In Touch</h2>
